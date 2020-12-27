@@ -1,3 +1,4 @@
 home_monitor.conf
-./logs
-./_pycache_
+logs/
+_pycache_/
+logs/home_monitor.log

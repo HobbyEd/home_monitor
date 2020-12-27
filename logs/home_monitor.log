@@ -4,3 +4,6 @@ INFO:root:2020-12-27 19:49:24.874116 >> CoinCollector has succesfull been create
 INFO:root:2020-12-27 19:54:29.723746 >>Home monitor gestart.
 INFO:root:2020-12-27 19:54:29.724872 >> InfluxClient has succesfull been created
 INFO:root:2020-12-27 19:54:29.725070 >> CoinCollector has succesfull been created
+INFO:root:2020-12-27 20:15:27.199463 >>Home monitor gestart.
+INFO:root:2020-12-27 20:15:27.199977 >> InfluxClient has succesfull been created
+INFO:root:2020-12-27 20:15:27.200048 >> CoinCollector has succesfull been created

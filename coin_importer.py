@@ -11,9 +11,9 @@ import time
 class CoinClient():
   def __init__(self, coinmarketcap_api_key):
 
-    self.url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
+    self.url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
     self.headers = {'Accepts': 'application/json', 'X-CMC_PRO_API_KEY': coinmarketcap_api_key}
-    self.parameters = {'start': '1', 'limit': '5000', 'convert': 'EUR'}
+    self.parameters = {'symbol': 'BTC,ETH', 'convert': 'EUR'}
 
   def tickers(self):
     session = Session()
@@ -36,10 +36,8 @@ class CoinCollector():
       if 'data' not in response:
         logging.error('%s >>No data in response. Is your API key set?', datetime.now())
       else:
-        for value in response['data']:
-          for price in ['EUR']:
-            if value['symbol'] == 'BTC' or value['symbol'] == 'ETH': 
-              self.__persist_point(value)
+        self.__persist_point(response['data']['BTC'])
+        self.__persist_point(response['data']['ETH'])
     except: 
       logging.error("%s >>something went wrong this requesting Coin Market Cap API", datetime.now())
 

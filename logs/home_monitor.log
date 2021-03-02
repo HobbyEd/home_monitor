@@ -1,12 +1,135 @@
-INFO:root:2020-12-27 19:49:24.872996 >>Home monitor gestart.
-INFO:root:2020-12-27 19:49:24.873918 >> InfluxClient has succesfull been created
-INFO:root:2020-12-27 19:49:24.874116 >> CoinCollector has succesfull been created
-INFO:root:2020-12-27 19:54:29.723746 >>Home monitor gestart.
-INFO:root:2020-12-27 19:54:29.724872 >> InfluxClient has succesfull been created
-INFO:root:2020-12-27 19:54:29.725070 >> CoinCollector has succesfull been created
-INFO:root:2020-12-27 20:15:27.199463 >>Home monitor gestart.
-INFO:root:2020-12-27 20:15:27.199977 >> InfluxClient has succesfull been created
-INFO:root:2020-12-27 20:15:27.200048 >> CoinCollector has succesfull been created
-INFO:root:2020-12-27 23:43:17.854869 >>Home monitor gestart.
-INFO:root:2020-12-27 23:43:17.855830 >> InfluxClient has succesfull been created
-INFO:root:2020-12-27 23:43:17.855950 >> CoinCollector has succesfull been created
+INFO:root:2021-01-11 19:37:53.223025 >>Home monitor gestart.
+INFO:root:2021-01-11 19:37:53.223363 >> InfluxClient has succesfull been created
+INFO:root:2021-01-11 19:37:53.223423 >> CoinCollector has succesfull been created
+INFO:root:2021-01-11 19:41:14.427966 >>Home monitor gestart.
+INFO:root:2021-01-11 19:41:14.428332 >> InfluxClient has succesfull been created
+INFO:root:2021-01-11 19:41:14.428395 >> CoinCollector has succesfull been created
+INFO:root:2021-01-11 19:46:19.647249 >>Home monitor gestart.
+INFO:root:2021-01-11 19:46:19.648254 >> InfluxClient has succesfull been created
+INFO:root:2021-01-11 19:46:19.648395 >> CoinCollector has succesfull been created
+INFO:root:2021-01-11 19:50:09.122803 >>Home monitor gestart.
+INFO:root:2021-01-11 19:50:09.123157 >> InfluxClient has succesfull been created
+INFO:root:2021-01-11 19:50:09.123216 >> CoinCollector has succesfull been created
+INFO:root:2021-01-12 07:38:58.637081 >>Home monitor gestart.
+INFO:root:2021-01-12 07:38:58.651103 >> InfluxClient has succesfull been created
+INFO:root:2021-01-12 07:38:58.651237 >> CoinCollector has succesfull been created
+ERROR:root:2021-01-13 13:46:09.056851 >>something went wrong this requesting Coin Market Cap API
+INFO:root:2021-01-13 18:25:47.115494 >>Home monitor gestart.
+INFO:root:2021-01-13 18:25:47.123179 >> InfluxClient has succesfull been created
+INFO:root:2021-01-13 18:25:47.123286 >> CoinCollector has succesfull been created
+ERROR:root:2021-01-14 01:10:33.986229 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-01-14 02:02:56.761083 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-01-17 10:00:16.545161 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-01-17 20:00:14.896290 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-01-19 10:19:16.640871 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-01-19 15:35:45.372128 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-01-19 15:36:19.291969 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-01-19 15:36:53.851812 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-01-19 15:37:27.771840 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-01-19 15:38:01.691986 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-01-20 10:46:17.623897 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-01-20 15:00:20.025430 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-01-21 22:27:20.156259 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-01-23 02:09:21.807928 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-01-23 05:14:22.127539 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-01-25 22:31:00.572729 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-01-25 22:31:34.491973 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-01-25 22:32:08.411819 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-01-25 22:32:42.331786 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-01-25 22:33:16.251807 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-01-26 18:16:27.509164 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-01-31 06:19:34.573696 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-01-31 08:10:36.041512 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-01 04:18:02.973305 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-02-01 04:18:06.997478 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-02-01 04:18:09.045399 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-02-01 04:18:11.091457 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-02-01 04:18:13.178041 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-02-01 04:18:15.225013 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-02-01 04:18:19.378204 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-02-01 04:18:21.620614 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-02-01 04:18:23.882127 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-02-01 04:18:33.999671 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-02-01 04:18:36.690287 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-02-01 04:18:39.384669 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-02-01 04:18:41.863918 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-02-01 16:51:37.198784 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-02 11:02:39.175371 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-03 07:19:39.254252 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-03 11:24:39.490494 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-03 14:14:39.775634 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-04 22:53:41.678135 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-05 03:21:24.563602 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-06 04:29:43.869680 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-08 00:22:46.692559 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-08 10:25:48.074195 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-10 00:28:49.610642 >>something went wrong this requesting Coin Market Cap API
+INFO:root:2021-02-10 18:38:28.933699 >>Home monitor gestart.
+INFO:root:2021-02-10 18:38:28.940233 >> InfluxClient has succesfull been created
+INFO:root:2021-02-10 18:38:28.940298 >> CoinCollector has succesfull been created
+ERROR:root:2021-02-11 10:37:08.854377 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-12 16:09:10.920997 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-14 10:16:13.729674 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-15 08:04:15.388762 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-16 18:38:17.376303 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-16 21:04:17.460875 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-18 17:05:21.318266 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-19 16:36:21.809010 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-19 19:14:21.807195 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-20 02:32:22.209115 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-20 21:10:24.965027 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-21 04:42:23.915186 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-21 12:00:25.677571 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-21 14:44:24.623211 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-24 15:29:29.707198 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-24 17:00:31.359608 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-25 15:34:31.620152 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-26 05:09:31.784552 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-02-26 07:29:32.246860 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-03-01 01:43:36.654890 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-03-01 04:01:50.034089 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:01:55.029620 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:01:59.039305 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:02:04.039182 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:02:07.048929 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:02:09.097887 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:02:11.151218 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:02:13.187245 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:02:15.223407 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:02:19.879319 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:02:22.153379 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:02:24.419015 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:02:26.674360 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:02:29.036769 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:02:38.835776 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:02:41.456310 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:02:43.901740 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:04:23.444670 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:04:25.726540 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:04:28.057411 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:04:30.598142 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:04:32.874746 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:04:35.157429 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:04:37.447339 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:04:39.730765 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:04:42.032335 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:04:44.366970 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:04:46.663476 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:04:48.946616 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:04:51.236747 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 04:04:53.538987 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+INFO:root:2021-03-01 07:12:01.584002 >>Home monitor gestart.
+INFO:root:2021-03-01 07:12:01.584319 >> InfluxClient has succesfull been created
+INFO:root:2021-03-01 07:12:01.584376 >> CoinCollector has succesfull been created
+ERROR:root:2021-03-01 10:21:37.422606 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-03-01 15:10:20.688620 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-03-01 15:16:49.361726 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-03-01 15:23:12.454808 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-03-01 15:28:04.286169 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-03-01 15:30:55.038275 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-03-01 15:37:28.041385 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-03-01 15:43:56.238138 >>something went wrong this requesting Coin Market Cap API
+ERROR:root:2021-03-02 14:20:39.314740 >>something went wrong this requesting Coin Market Cap API
+INFO:root:2021-03-02 19:42:28.646579 >>Home monitor gestart.
+INFO:root:2021-03-02 19:42:28.647842 >> InfluxClient has succesfull been created
+INFO:root:2021-03-02 19:42:28.647957 >> CoinCollector has succesfull been created

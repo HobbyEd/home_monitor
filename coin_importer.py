@@ -13,7 +13,7 @@ class CoinClient():
 
     self.url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
     self.headers = {'Accepts': 'application/json', 'X-CMC_PRO_API_KEY': coinmarketcap_api_key}
-    self.parameters = {'symbol': 'BTC,ETH', 'convert': 'EUR'}
+    self.parameters = {'symbol': 'BTC,ETH,ADA', 'convert': 'EUR'}
 
   def tickers(self):
     session = Session()
@@ -38,6 +38,7 @@ class CoinCollector():
       else:
         self.__persist_point(response['data']['BTC'])
         self.__persist_point(response['data']['ETH'])
+        self.__persist_point(response['data']['ADA'])
     except: 
       logging.error("%s >>something went wrong this requesting Coin Market Cap API", datetime.now())
 

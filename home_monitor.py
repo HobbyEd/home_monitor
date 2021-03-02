@@ -35,14 +35,13 @@ cumulatief_count = 0
 while True:     
     persistor.persist_plugwise_smile_actueel()
     if cumulatief_count > 3600: 
-        persistor.persist_plugwise_smile_cumulatief()
+        #persistor.persist_plugwise_smile_cumulatief()
         cumulatief_count = 0 
 
-    if crypto_count > 60: 
+    if crypto_count > 300: 
         cimporter.collect()
         crypto_count = 0
     
     crypto_count = crypto_count + 2
     cumulatief_count = cumulatief_count + 2
-    
     time.sleep(2)

@@ -2,3 +2,5 @@ home_monitor.conf
 logs/
 _pycache_/
 logs/home_monitor.log
+__pycache__/coin_importer.cpython-38.pyc
+logs/home_monitor.log

@@ -30,18 +30,12 @@ logging.info("%s >> InfluxClient has succesfull been created", datetime.now())
 persistor = plugwise_persistor.PersistTimeSeriesForPlugwiseSmile(influxDB_client, plugwise_smile_host,plugwise_smile_password)
 cimporter = cimporter.CoinCollector(influxDB_client, coinmarketcap_api_key)
 crypto_count = 0
-cumulatief_count = 0
 
 while True:     
     persistor.persist_plugwise_smile_actueel()
-    if cumulatief_count > 3600: 
-        #persistor.persist_plugwise_smile_cumulatief()
-        cumulatief_count = 0 
-
     if crypto_count > 300: 
         cimporter.collect()
         crypto_count = 0
     
     crypto_count = crypto_count + 2
-    cumulatief_count = cumulatief_count + 2
     time.sleep(2)

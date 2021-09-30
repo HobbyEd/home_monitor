@@ -55,38 +55,39 @@ class Smile:
         return self._cumulatief_opgewekt_laag_tarief
 
     def update_data(self):
-        try:
+       try:
             resp = requests.get(self._endpoint, auth=HTTPBasicAuth(self._username, self._password) )
             resp_dict = xmltodict.parse(resp.content)
 
-            # Zet alle actuele waarden.        
-            for verbruik in resp_dict['domain_objects']['module']['services']['electricity_point_meter']['measurement']:
-                if verbruik['@directionality'] == 'consumed': 
-                    self._actueel_verbruikt = {'meeting_type': meeting_type.ACTUEEL_VERBRUIKT.value, 'waarde': verbruik['#text'], "time_stamp": verbruik['@log_date'], "eenheid": verbruik['@unit']}
-                elif verbruik['@directionality'] == 'produced':
-                    self._actueel_opgewekt = {'meeting_type': meeting_type.ACTUEEL_OPGEWEKT.value, 'waarde': verbruik['#text'], "time_stamp": verbruik['@log_date'], "eenheid": verbruik['@unit']}
-            
-            #Zet alle cumulatieve waarden. 
-            for verbruik in resp_dict['domain_objects']['module']['services']['electricity_cumulative_meter']['measurement']:
-                if verbruik['@directionality'] == 'consumed': 
-                    if verbruik['@tariff_indicator'] == 'nl_peak':
-                        self._cumulatief_verbuikt_hoog_tarief = {'meeting_type': meeting_type.CUMULATIEF_VERBRUIKT_HOOG_TARIEF.value, 'waarde': verbruik['#text'], "time_stamp": verbruik['@log_date'], "eenheid": verbruik['@unit']}
-                    elif verbruik['@tariff_indicator'] == 'nl_offpeak':
-                        self._cumulatief_verbuikt_laag_tarief = {'meeting_type': meeting_type.CUMULATIEF_VERBRUIKT_LAAG_TARIEF.value, 'waarde': verbruik['#text'], "time_stamp": verbruik['@log_date'], "eenheid": verbruik['@unit']}
-                elif verbruik['@directionality'] == 'produced':
-                    if verbruik['@tariff_indicator'] == 'nl_peak':
-                        self._cumulatief_opgewekt_hoog_tarief = {'meeting_type': meeting_type.CUMULATIEF_OPGEWEKT_HOOG_TARIEF.value, 'waarde': verbruik['#text'], "time_stamp": verbruik['@log_date'], "eenheid": verbruik['@unit']}
-                    elif verbruik['@tariff_indicator'] == 'nl_offpeak':
-                        self._cumulatief_opgewekt_laag_tarief = {'meeting_type': meeting_type.CUMULATIEF_OPGEWEKT_LAAG_TARIEF.value, 'waarde': verbruik['#text'], "time_stamp": verbruik['@log_date'], "eenheid": verbruik['@unit']}
+            # Zet alle actuele waarden.  
+            point_log  =resp_dict['domain_objects']['location']["logs"]["point_log"]
+            for point in point_log:
+                if point["type"].upper() == "ELECTRICITY_CONSUMED":
+                    ruw_verbruik = point
+                elif point["type"].upper() == "ELECTRICITY_PRODUCED":
+                    ruw_opgewekt = point
 
-            #Bepaal de echte actuele waarde door te kijken of er opgewekt wordt. 
-            #Zo, dan is actueel negatief wat opgeleverd wordt
-            #Zo, niet dan is het gewoon de verbruikt waarde
+            er_is_verbuik = False
+            for verbruik in ruw_verbruik["period"]["measurement"]:
+                if float(verbruik['#text']) != float("0"): 
+                    er_is_verbuik = True
+                    self._actueel_verbruikt = {'meeting_type': meeting_type.ACTUEEL_VERBRUIKT.value, 'waarde': verbruik['#text'], 'time_stamp': verbruik['@log_date'], 'eenheid': 'Watt'}                
+            if not er_is_verbuik: 
+                self._actueel_verbruikt = {'meeting_type': meeting_type.ACTUEEL_VERBRUIKT.value, 'waarde': str(float('0')), 'time_stamp': ruw_verbruik["period"]["measurement"][0]['@log_date'], 'eenheid': 'Watt'}
+
+            er_is_opgewekt = False
+            for opgewekt in ruw_opgewekt["period"]["measurement"]:
+                if float(opgewekt['#text']) != float("0"): 
+                    er_is_opgewekt = True
+                    self._actueel_opgewekt = {'meeting_type': meeting_type.ACTUEEL_OPGEWEKT, 'waarde': opgewekt['#text'], 'time_stamp': opgewekt['@log_date'], 'eenheid': 'Watt'}                
+            if not er_is_opgewekt: 
+                self._actueel_opgewekt = {'meeting_type': meeting_type.ACTUEEL_OPGEWEKT, 'waarde': str(float('0')), 'time_stamp': ruw_opgewekt["period"]["measurement"][0]['@log_date'], 'eenheid': 'Watt'}                
+
             if float(self._actueel_verbruikt['waarde']) == 0: 
                 self._actueel = {'meeting_type': meeting_type.ACTUEEL.value, 'waarde': str(0 - float(self._actueel_opgewekt['waarde'])), 'time_stamp': self._actueel_opgewekt['time_stamp'], 'eenheid': self._actueel_opgewekt['eenheid']}            
             else: 
                 self._actueel = {'meeting_type': meeting_type.ACTUEEL.value, 'waarde': self._actueel_verbruikt['waarde'], 'time_stamp': self._actueel_verbruikt['time_stamp'], 'eenheid': self._actueel_verbruikt['eenheid']}            
-        except: 
+       except: 
             logging.error("%s >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.", datetime.now())
             
 

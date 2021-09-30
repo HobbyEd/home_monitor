@@ -15,12 +15,6 @@ class PersistTimeSeriesForPlugwiseSmile():
         self.__persist_point(self.p1.get_actueel_opgewekt())
         self.__persist_point(self.p1.get_actueel())
                     
-    def persist_plugwise_smile_cumulatief(self): 
-        self.p1.update_data()
-        self.__persist_point(self.p1.get_cumulatief_opgewekt_hoog_tarief())
-        self.__persist_point(self.p1.get_cumulatief_opgewekt_laag_tarief())
-        self.__persist_point(self.p1.get_cumulatief_verbuikt_hoog_tarief())
-        self.__persist_point(self.p1.get_cumulatief_verbuikt_laag_tarief())
 
     def __persist_point(self, meetwaarde): 
         json_body = self.__get_point(meetwaarde)

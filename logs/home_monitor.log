@@ -39,3 +39,21 @@ INFO:root:2021-09-30 20:44:21.476005 >> CoinCollector has succesfull been create
 INFO:root:2021-09-30 20:47:24.845786 >>Home monitor gestart.
 INFO:root:2021-09-30 20:47:24.846081 >> InfluxClient has succesfull been created
 INFO:root:2021-09-30 20:47:24.846160 >> CoinCollector has succesfull been created
+ERROR:root:2021-10-01 04:23:12.809511 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:23:46.782760 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:24:04.736120 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:24:06.770999 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:24:11.910654 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:24:13.961220 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:24:15.998636 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:24:31.167235 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:25:05.502756 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:25:10.258505 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:25:14.255587 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:25:19.256299 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:25:21.304356 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:25:23.351686 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:25:25.389228 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:25:30.551141 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 04:25:32.602469 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.
+ERROR:root:2021-10-01 14:42:54.302711 >> Er is iets fout gegaan met het ophalen van gegevens uit de Smile.

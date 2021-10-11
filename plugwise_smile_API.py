@@ -79,9 +79,9 @@ class Smile:
             for opgewekt in ruw_opgewekt["period"]["measurement"]:
                 if float(opgewekt['#text']) != float("0"): 
                     er_is_opgewekt = True
-                    self._actueel_opgewekt = {'meeting_type': meeting_type.ACTUEEL_OPGEWEKT, 'waarde': opgewekt['#text'], 'time_stamp': opgewekt['@log_date'], 'eenheid': 'Watt'}                
+                    self._actueel_opgewekt = {'meeting_type': meeting_type.ACTUEEL_OPGEWEKT.value, 'waarde': opgewekt['#text'], 'time_stamp': opgewekt['@log_date'], 'eenheid': 'Watt'}                
             if not er_is_opgewekt: 
-                self._actueel_opgewekt = {'meeting_type': meeting_type.ACTUEEL_OPGEWEKT, 'waarde': str(float('0')), 'time_stamp': ruw_opgewekt["period"]["measurement"][0]['@log_date'], 'eenheid': 'Watt'}                
+                self._actueel_opgewekt = {'meeting_type': meeting_type.ACTUEEL_OPGEWEKT.value, 'waarde': str(float('0')), 'time_stamp': ruw_opgewekt["period"]["measurement"][0]['@log_date'], 'eenheid': 'Watt'}                
 
             if float(self._actueel_verbruikt['waarde']) == 0: 
                 self._actueel = {'meeting_type': meeting_type.ACTUEEL.value, 'waarde': str(0 - float(self._actueel_opgewekt['waarde'])), 'time_stamp': self._actueel_opgewekt['time_stamp'], 'eenheid': self._actueel_opgewekt['eenheid']}            
